@@ -1,5 +1,12 @@
 # tac_portal
 
+Two tier application which provides a dedicated functionality to each users
+1. Users
+2. Server with database
+   
+
+
+
 ## Project setup
 ```
 npm install
