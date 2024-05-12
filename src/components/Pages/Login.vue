@@ -61,11 +61,11 @@ export default {
     methods:{
       onSubmit() {
        
-      this.isLoading = true;
-      const userData = {
-        email: this.email,
-        password: this.password
-      };
+      // this.isLoading = true;
+      // const userData = {
+      //   email: this.email,
+      //   password: this.password
+      // };
     router.push('/home')
       // axios.post('http://localhost:8001/', userData)
       //   .then(response => {
