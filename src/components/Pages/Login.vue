@@ -66,7 +66,7 @@ export default {
         email: this.email,
         password: this.password
       };
-
+    router.push('/home')
       axios.post('http://localhost:8001/', userData)
         .then(response => {
           if(response.data.user.email==this.email && response.data.user.password==this.password){
@@ -79,6 +79,7 @@ export default {
             console.log("logging")
             this.isLoading = false
             router.push('/home')
+            
 
           }, 3000);
           }
