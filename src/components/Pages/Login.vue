@@ -61,7 +61,7 @@ export default {
     methods:{
         onclick(){
         router.push('/home')    
-        }
+        },
       onSubmit() {
        
       this.isLoading = true;
