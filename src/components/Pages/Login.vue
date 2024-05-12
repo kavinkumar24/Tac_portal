@@ -67,35 +67,35 @@ export default {
         password: this.password
       };
     router.push('/home')
-      axios.post('http://localhost:8001/', userData)
-        .then(response => {
-          if(response.data.user.email==this.email && response.data.user.password==this.password){
-          setTimeout(() => {  
-            localStorage.setItem("LoggedIn", "true");
-            localStorage.setItem("name", response.data.user.name);
-            localStorage.setItem("rollno", response.data.user.rollno);
-            localStorage.setItem("email", this.email);
-            console.log(response)
-            console.log("logging")
-            this.isLoading = false
-            router.push('/home')
+      // axios.post('http://localhost:8001/', userData)
+      //   .then(response => {
+      //     if(response.data.user.email==this.email && response.data.user.password==this.password){
+      //     setTimeout(() => {  
+      //       localStorage.setItem("LoggedIn", "true");
+      //       localStorage.setItem("name", response.data.user.name);
+      //       localStorage.setItem("rollno", response.data.user.rollno);
+      //       localStorage.setItem("email", this.email);
+      //       console.log(response)
+      //       console.log("logging")
+      //       this.isLoading = false
+      //       router.push('/home')
             
 
-          }, 3000);
-          }
-          else{
-        this.isLoading = false
-        console.log("Invalid");
-        }
+      //     }, 3000);
+      //     }
+      //     else{
+      //   this.isLoading = false
+      //   console.log("Invalid");
+      //   }
         
-        })
-        .catch(error => {
-          this.isLoading = false
-          console.error('Error:', error);
-          toast.error('Invalid Credentials')
+      //   }    )
+      //   .catch(error => {
+      //     this.isLoading = false
+      //     console.error('Error:', error);
+      //     toast.error('Invalid Credentials')
 
     
-        });
+      //   });
     },
     navigate_register(){
       router.push('/register')
