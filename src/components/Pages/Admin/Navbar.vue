@@ -1,4 +1,6 @@
+
 <script setup>
+import router from '@/router';
 
 </script>
 
@@ -95,6 +97,7 @@
           console.log("logging")
           this.isLoading_inside = false
         }, 2000);
+        router.push('/show_projects')
       }
     }
   }

@@ -66,6 +66,16 @@ export default {
         email: this.email,
         password: this.password
       };
+      const adminEmail = localStorage.getItem('Admin_email');
+        const adminPassword = localStorage.getItem('admin_pass');
+            if (userData.email === adminEmail && userData.password === adminPassword) {
+                localStorage.setItem('LoggedIn', "true");
+                localStorage.setItem('name', 'Admin');
+                localStorage.setItem('email', this.email);
+                this.isLoading = false;
+                router.push('/admin_dashboard');
+                return;
+            }
 
       axios.post('http://localhost:8001/', userData)
         .then(response => {

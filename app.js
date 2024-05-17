@@ -157,6 +157,28 @@ app.post("/add_form", async (req, res) => {
 });
 
 
+app.post('/update_status', async (req, res) => {
+  const { detailId, newStatus } = req.body;
+
+  try {
+      // Find the document that contains the detail and update the status
+      const updatedDetail = await tacdetails.findOneAndUpdate(
+          { 'Details._id': detailId },
+          { $set: { 'Details.$.status': newStatus } },
+          { new: true }
+      );
+
+      if (updatedDetail) {
+          res.json({ success: true, updatedDetail });
+      } else {
+          res.status(404).json({ success: false, message: 'Detail not found' });
+      }
+  } catch (error) {
+      console.error('Error updating status:', error);
+      res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+});
+
 
 
 // Start server

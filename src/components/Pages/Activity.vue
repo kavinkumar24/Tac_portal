@@ -111,6 +111,7 @@ onMounted(async () => {
 
 
             <th scope="col" class="px-6 py-3 text-nowrap">No of Students</th>
+            <th scope="col" class="px-6 py-3 text-nowrap">pdf</th>
             <th scope="col" class="px-6 py-3">Status</th>
           </tr>
         </thead>
@@ -133,6 +134,9 @@ onMounted(async () => {
                 <td class="px-6 py-4 text-nowrap text-center">{{ detail.additionalStudents[3].name || '--' }} {{ detail.additionalStudents[3].rollNo ? '(' + detail.additionalStudents[3].rollNo + ')' : '' }}</td>
                 <td class="px-6 py-4 text-nowrap text-center">{{ detail.additionalStudents[4].name || '--' }} {{ detail.additionalStudents[4].rollNo ? '(' + detail.additionalStudents[4].rollNo + ')' : '' }}</td>
                 <td class="px-6 py-4 text-nowrap text-center">{{ detail.numberOfStudents   }}</td>
+
+                <td class="px-6 py-4 text-nowrap text-center">{{ detail.pdfPath || '--' }}</td>
+                
 
 
                 <td class="px-6 py-4">

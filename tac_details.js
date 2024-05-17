@@ -53,6 +53,7 @@ const student_data = {
       type:String,
       default:'Initiated'
     },
+    rejectionReason: { type: String, default: '' },
     createdAt:{
       type:Date,
       default:Date.now

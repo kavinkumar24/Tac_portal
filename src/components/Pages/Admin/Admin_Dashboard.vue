@@ -7,7 +7,7 @@ import Navbar from './Navbar';
     <div>
         <Navbar />
         <br>
-    <div class="grid grid-cols-1 p-0 gap-[2%] md:flex md:flex-row flex-wrap w-[80%] space-y-8 relative left-24 md:left-0">
+    <div class="grid grid-cols-1 p-0 gap-[1.6%] md:flex md:flex-row flex-wrap w-[80%] space-y-8 relative left-20 md:-left-7">
             
       <div class="bg-white text-black w-56 h-20 relative left-20 top-24 md:text-sm md:left-80 md:w-72 md:h-28 shadow-md rounded-md md:rounded-2xl border-l-8 border-[#FF6347] cursor-pointer transition ease-in-out delay-150 hover:
                     hover:-translate-y-1 hover:scale-90 hover:bg-[#FEFBF6] duration-100">
@@ -82,21 +82,21 @@ import Navbar from './Navbar';
         </div>
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg  top-32 h-80 w-full md:w-[90%] -left-1/4 md:left-0">
     <table class="w-full text-sm text-left text-gray-900 dark:text-gray-900 h-80">
-        <thead class="text-xs text-gray-900 uppercase bg-gray-50 dark:bg-[#D9D9D9] dark:text-gray-900">
-            <tr>
-                <th scope="col" class="px-6 py-3">
+        <thead class="text-xs uppercase">
+            <tr class="bg-slate-500 text-white">
+                <th scope="col" class="px-6 py-3 text-nowrap">
                     S no
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-nowrap">
                     Tac Id
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-nowrap">
                     Title
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-nowrap">
                     Team Member
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-nowrap">
                     Status
                 </th>
             </tr>

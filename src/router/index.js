@@ -8,6 +8,7 @@ import Activity from '../components/Pages/Activity.vue'
 import Admin_Dashboard from '../components/Pages/Admin/Admin_Dashboard.vue'
 import Appointment from '@/components/Pages/Appointment.vue'
 import Register from '../components/Pages/Register.vue'
+import Show_projects from '../components/Pages/Admin/Show_projects.vue'
     const routes = [
         {
             name: 'Login',
@@ -38,6 +39,7 @@ import Register from '../components/Pages/Register.vue'
         {
             name: 'Admin Dashboard',
             component: () => Admin_Dashboard,
+            meta: { requiresAuth: true },
             path: '/admin_dashboard'
         },
         {
@@ -51,6 +53,11 @@ import Register from '../components/Pages/Register.vue'
             name: 'Register',
             component: () => Register,
             path: '/register'
+        },
+        {
+            name: 'Admin Projects',
+            component: () => Show_projects,
+            path: '/show_projects'
         }
     
     ];
