@@ -37,7 +37,7 @@ import Navbar from './Navbar.vue';
           Book
          </button>
 
-            
+          
         </div>
     </form>
 </div>
