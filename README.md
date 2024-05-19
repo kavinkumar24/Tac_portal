@@ -17,7 +17,7 @@ Two tier application which provides a dedicated functionality to each users
 6. Admin’s Analytical Dashboard
 
 
-![TAC Portal](assets/user_interface.png)
+![TAC Portal](src/components/assets/user_interface.png)
 
 
 
