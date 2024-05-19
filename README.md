@@ -1,4 +1,4 @@
-# tac_portal
+# Tac_portal
 
 Two tier application which provides a dedicated functionality to each users
 1. Users [Students, admins];
@@ -15,6 +15,10 @@ Two tier application which provides a dedicated functionality to each users
 4. Appointment Booking
 5. Admin Access
 6. Admin’s Analytical Dashboard
+
+
+![TAC Portal](assets/user_interface.png)
+
 
 
 
