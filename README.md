@@ -33,9 +33,11 @@ Two tier application which provides a dedicated functionality to each users
 ### Studnet's Home:
 ![TAC Portal](src/components/assets/student_home.png)
 
+### Student's Activity:
+![TAC Portal](src/components/assets/Activity.png)
 
 ### admin's Home:
-![TAC Portal](src/components/assets/admin's_home.png)
+![TAC Portal](src/components/assets/Admin's_action.png)
 
 
 
