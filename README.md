@@ -37,6 +37,9 @@ Two tier application which provides a dedicated functionality to each users
 ![TAC Portal](src/components/assets/Activity.png)
 
 ### admin's Home:
+![TAC Portal](src/components/assets/admin's_home.png)
+
+### admin's Activity:
 ![TAC Portal](src/components/assets/Admin's_action.png)
 
 
