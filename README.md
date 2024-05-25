@@ -26,6 +26,18 @@ Two tier application which provides a dedicated functionality to each users
 ### Login:
 ![TAC Portal](src/components/assets/Login.png)
 
+### Register:
+![TAC Portal](src/components/assets/Register.png)
+
+
+### Studnet's Home:
+![TAC Portal](src/components/assets/student_home.png)
+
+
+### admin's Home:
+![TAC Portal](src/components/assets/admin's_home.png)
+
+
 
 ## Project setup
 ```
