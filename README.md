@@ -36,6 +36,10 @@ Two tier application which provides a dedicated functionality to each users
 ### Tac form:
 ![TAC Portal](src/components/assets/tac_form.png)
 
+### Appointment booking form:
+![TAC Portal](src/components/assets/appointment.png)
+
+
 ### Student's Activity:
 ![TAC Portal](src/components/assets/Activity.png)
 
