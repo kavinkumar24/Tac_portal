@@ -48,6 +48,10 @@ Two tier application which provides a dedicated functionality to each users
 ### admin's Activity:
 ![TAC Portal](src/components/assets/Admin's_action.png)
 
+### admin's Detailed view of each entry:
+![TAC Portal](src/components/assets/Detailed_view.png)
+
+
 
 
 ## Project setup
