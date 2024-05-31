@@ -1,6 +1,6 @@
-# Tac_portal
+# Tac_portal 
 
-Two tier application which provides a dedicated functionality to each users
+Two tier application which provides a dedicated functionality and features to each users
 1. Users [Students, admins];
 2. Server with database
    
