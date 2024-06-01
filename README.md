@@ -16,7 +16,7 @@ Two tier application which provides a dedicated functionality and features to ea
 5. Admin Access
 6. Admin’s Analytical Dashboard
 
-## overview:
+## overview of the project 
 ### user's view
 ![TAC Portal](src/components/assets/user_interface.png)
 ### admin's view
