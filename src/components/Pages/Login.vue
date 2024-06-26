@@ -106,6 +106,7 @@ export default {
     
         });
     },
+    
     navigate_register(){
       router.push('/register')
     }

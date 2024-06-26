@@ -11,10 +11,9 @@ app.use(cors());
 
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
-    cb(null, './src/PDF'); 
+    cb(null, './public/pdf');
   },
   filename: function(req, file, cb) {
-    // Use the original filename with a timestamp to avoid conflicts
     const filename = `${file.originalname}`;
     cb(null, filename);
   }

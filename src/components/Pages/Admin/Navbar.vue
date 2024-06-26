@@ -6,7 +6,7 @@ import router from '@/router';
 
 <template>
     <div>
-      <div class="nav bg-[#00bcf1] px-10 h-14 flex shadow-lg fixed w-full z-50">
+      <div class="nav bg-[#00bcf1] px-10 h-14 flex shadow-lg fixed w-full z-20">
         <h1 id="Nav_heading" class="text-6xl text-white left-8 pt-2 w-24">TacAdmin</h1>
 
         <!-- <div class="flex items-center justify-center w-10 h-10 border border-black cursor-pointer hover:bg-transparent hover: bg-white rounded-full" @click="toggleSidebar"></div> -->
@@ -31,7 +31,7 @@ import router from '@/router';
         </div>
       </div>
       <div class="grid grid-cols-2">
-        <div class="fixed left-0 top-14 w-[40%] h-full bg-white ease-in-out duration-700 shadow-lg md:w-[20%]" :class="{ 'translate-x-0': isSidebarOpen, '-translate-x-full': !isSidebarOpen}">
+        <div class="fixed left-0 top-14 w-[40%] h-full bg-white ease-in-out duration-700 shadow-lg md:w-[20%] z-50" :class="{ 'translate-x-0': isSidebarOpen, '-translate-x-full': !isSidebarOpen}">
           <ul class="pt-2">
             <li class="p-4 border-b border-gray-400 text-[#142c74] hover:bg-gray-200 side_bar_font cursor-pointer" @click="navigate"><i class="fa-solid fa-house"></i>  &nbsp;Home </li>
             <li class="p-4 border-b border-gray-400 text-[#142c74] hover:bg-gray-200 side_bar_font cursor-pointer" @click="navigate_activity"><i class="fa-solid fa-bars-progress"></i> &nbsp; Projects</li>
@@ -90,14 +90,15 @@ import router from '@/router';
           console.log("logging")
           this.isLoading_inside = false
         }, 2000);
+        router.push('/admin_dashboard')
       },
       navigate_activity(){
         this.isLoading_inside = true
         setTimeout(() => {
           console.log("logging")
           this.isLoading_inside = false
+          router.push('/show_projects')
         }, 2000);
-        router.push('/show_projects')
       }
     }
   }

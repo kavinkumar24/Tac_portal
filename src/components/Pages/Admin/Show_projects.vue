@@ -166,7 +166,8 @@ const submitRejectionReason = async (reason) => {
                     <template v-for="(user, index) in activityData" :key="index">
                         <!-- Iterate over each detail object -->
                         <template v-for="(detail, detailIndex) in user.Details" :key="detailIndex">
-                            <tr :class="detailIndex % 2 !== 0 ? 'even:bg-gray-200 even:text-gray-900' : 'odd:bg-white odd:text-gray-900'">
+                            <tr :class="detailIndex % 2!== 0 ? 'even:bg-gray-200 even:text-gray-900' : 'odd:bg-white    odd:text-gray-900'">
+                                
                                 <td class="px-6 py-4">1</td>
                                 <td class="px-6 py-4 text-nowrap">{{ user.userName }}</td>
                                 <td class="px-6 py-4">{{ user.roll_no }}</td>
