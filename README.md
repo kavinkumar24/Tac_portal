@@ -54,7 +54,7 @@ Two tier application which provides a dedicated functionality and features to ea
 
 
 
-## Project setup
+## Project setup to install the dependencies
 ```
 npm install
 ```
