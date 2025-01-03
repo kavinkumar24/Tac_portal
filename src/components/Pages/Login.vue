@@ -66,8 +66,8 @@ export default {
         email: this.email,
         password: this.password
       };
-      const adminEmail = localStorage.getItem('Admin_email');
-        const adminPassword = localStorage.getItem('admin_pass');
+      const adminEmail = 'admin@example.com';
+        const adminPassword = 'adminpassword';
             if (userData.email === adminEmail && userData.password === adminPassword) {
                 localStorage.setItem('LoggedIn', "true");
                 localStorage.setItem('name', 'Admin');
